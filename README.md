@@ -11,14 +11,15 @@ The frontend is written using Bootstrap as well as custom JavaScript to send use
 The backend is written in Python flask with `/chat` and `/` routes to process user's queries.
 
 ## Installation
+If you plan on using Docker, read part one under the Docker section before you move on to part one of the installation section.
 
 1. Run `pip install -r requirements.txt` to install all necessary dependencies.
-2. If Docker is not already installed on your machine, install it. Link for Ubuntu machines https://docs.docker.com/engine/install/ubuntu/. If your distribution is not Ubuntu search the web for the installation guide that fits your machine.
-3. Replace the openai_api with your OpenAI API key inside of `app.py` file.
-4. Run `flask --app app run --host 0.0.0.0 --debug` from the main directory of this project. (Not needed for Docker) 
+2. Replace the openai_api with your OpenAI API key inside of `app.py` file.
+3. Run `flask --app app run --host 0.0.0.0 --debug` from the main directory of this project. (Not needed for Docker) 
 
 
 ## Docker
+
 1. In order to run the application in a docker container first simply follow the installation instructions. Step 3 will not be needed if you plan on only running the app in a docker container.
 2. If Docker is not already installed on your machine, install it. Link for Ubuntu machines https://docs.docker.com/engine/install/ubuntu/. If your distribution is not Ubuntu search the web for the installation guide that fits your machine.
 3. This docker container runs on port 5000 on your localhost, so if another running conatiner is also using port 5000 make sure to stop that conatiner. To check if there are any other running containers using port 5000 use the `docker ps` command to see all other running conatiners and the ports they are running on. If there is another container using port 5000 use the `docker stop <ID>` command using the ID of the container found in the previous command to stop the container entirely or change the ports on the conflicting container if possible.
