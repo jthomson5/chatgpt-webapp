@@ -19,4 +19,9 @@ The backend is written in Python flask with `/chat` and `/` routes to process us
 
 
 ## Docker
+1. In order to run the application in a docker container first simply follow the installation instructions. Step 3 will not be needed if you plan on only running the app in a docker container.
+2. If Docker is not already installed on your machine, install it. Link for Ubuntu machines https://docs.docker.com/engine/install/ubuntu/. If your distribution is not Ubuntu search the web for the installation guide that fits your machine.
+3. This docker container runs on port 5000 on your localhost, so if another running conatiner is also using port 5000 make sure to stop that conatiner using the `docker 
+
+
 In order to run the application in a docker container simply follow installation instructions and then run the command `docker compose up` in chatgpt-webapp directory. After completed open up to your localhost on port 5000 and the app will be avalible there!!
