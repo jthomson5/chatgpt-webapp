@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template
 import openai
 
 # INSERT YOUR OPENAI_API KEY HERE
-openai.api_key = "OPENAI_API_KEY"
+openai.api_key = "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"
 
 app = Flask(__name__)
 
@@ -30,4 +30,4 @@ def chat():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
