@@ -13,8 +13,9 @@ The backend is written in Python flask with `/chat` and `/` routes to process us
 ## Installation
 
 1. Run `pip install -r requirements.txt` to install all necessary dependencies.
-2. Replace the openai_api with your OpenAI API key inside of `app.py` file.
-3. Run `flask --app app run --host 0.0.0.0 --debug` from the main directory of this project. 
+2. If Docker is not already installed on your machine, install it. Link for Ubuntu machines https://docs.docker.com/engine/install/ubuntu/, if your distribution is not Ubuntu search the web for the installation guide that fits your machine.
+3. Replace the openai_api with your OpenAI API key inside of `app.py` file.
+4. Run `flask --app app run --host 0.0.0.0 --debug` from the main directory of this project. (Not needed for Docker) 
 
 
 ## Docker
