@@ -16,4 +16,6 @@ The backend is written in Python flask with `/chat` and `/` routes to process us
 2. Replace the openai_api with your OpenAI API key inside of `app.py` file.
 3. Run `flask --app app run --host 0.0.0.0 --debug` from the main directory of this project. 
 
-This project will be dockerized in the future.
+
+## Docker
+In order to run the application in a docker container simply follow installation instructions and then run the command "docker compose up" in chatgpt-webapp directory. After completed open up to your localhost on port 5000 and the app will be avalible there!!
